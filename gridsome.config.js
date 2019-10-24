@@ -17,13 +17,13 @@ module.exports = {
     }
   },
   templates: {
-    Menu: '/menu/:title/:categories/:type/:description/:price',
+    Menu: '/menu/:title/:categories/:type/:descriptiom/:price',
   },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: './content/menu',
+        baseDir: '/content/menu',
         pathPrefix: '/menu',
         typeName: 'Menu',
         path: '*.md',
