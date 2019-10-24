@@ -7,22 +7,6 @@
   </Layout>
 </template>
 
-<page-query>
-query {
-  allMenu {
-    edges {
-      node {
-        title
-        categories
-        type
-        description
-        price
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
 import Menu from '../templates/Menu';
 export default {
