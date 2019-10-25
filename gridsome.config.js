@@ -26,10 +26,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: 'content/food',
-        pathPrefix: '/food',
+        path: './content/food/*.md',
         typeName: 'Food',
-        path: '*.md',
         remark: {
           plugins: [
             //...local plugins
@@ -39,10 +37,8 @@ module.exports = {
     },    {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: 'content/drinks',
-        pathPrefix: '/drinks',
+        path: './content/drinks/*.md',
         typeName: 'Drinks',
-        path: '*.md',
         remark: {
           plugins: [
             //...local plugins
@@ -52,10 +48,8 @@ module.exports = {
     },    {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: 'content/dessert',
-        pathPrefix: '/dessert',
+        path: './content/dessert/*.md',
         typeName: 'Dessert',
-        path: '*.md',
         remark: {
           plugins: [
             //...local plugins
