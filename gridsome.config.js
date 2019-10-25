@@ -16,23 +16,52 @@ module.exports = {
       ]
     }
   },
+  
   templates: {
-    Menu: '/menu/:title/:categories/:type/:descriptiom/:price',
+    Food: '/content/food/:title/:categories/:type/:description/:price',
+    Drinks: '/content/drinks/:title/:type/:description/:price',
+    Dessert: '/content/dessert/:title/:type/:description/:price',
   },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        baseDir: '/content/menu',
-        pathPrefix: '/menu',
-        typeName: 'Menu',
+        baseDir: 'content/food',
+        pathPrefix: '/food',
+        typeName: 'Food',
         path: '*.md',
         remark: {
           plugins: [
             //...local plugins
           ]
         }
-      }
+      },
+    },    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: 'content/drinks',
+        pathPrefix: '/drinks',
+        typeName: 'Drinks',
+        path: '*.md',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      },
+    },    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        baseDir: 'content/dessert',
+        pathPrefix: '/dessert',
+        typeName: 'Dessert',
+        path: '*.md',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      },
     },
     {
       use: `gridsome-plugin-netlify-cms`,
