@@ -1,4 +1,5 @@
 ---
-title: 'Cacio e Pepe Potato Gnocchi'
-price: 89
+title: Cacio e Pepe Potato Gnocchi
+price: '69'
 ---
+
