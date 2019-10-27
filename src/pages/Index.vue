@@ -22,4 +22,9 @@ export default {
     margin-left: -8em;
     margin-top: -2.5em;
   }
+    @media screen and (max-width: 960px) {
+    video {
+      width: 100vw;
+    }
+  }
 </style>

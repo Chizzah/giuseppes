@@ -2,9 +2,9 @@
     <GmapMap
     ref="mapRef"
     :center="{lat:10, lng:10}"
-    :zoom="7"
+    :zoom="15"
     map-type-id="terrain"
-    style="width: 500px; height: 300px"
+    style="width: 52em; height: 300px; padding: 2em 0;"
     >
     <GmapMarker
         :key="index"

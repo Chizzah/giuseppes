@@ -54,4 +54,10 @@ ul {
   list-style: none;
 }
 
+  @media screen and (max-width: 960px) {
+    .container {
+      float: none;
+      width: 100%;
+    }
+  }
 </style>

@@ -4,7 +4,7 @@
             <div>
                 <h1 class="brand">Mango's</h1>
             </div>
-            <div>
+            <div class="listContainer">
                 <ul>
                     <li><g-link to="/">Home</g-link></li>
                     <li><g-link to="/about">About</g-link></li>
@@ -14,12 +14,12 @@
                     <li><g-link to="/contact">Contact</g-link></li>
                 </ul>
             </div>
-            <div>
+            <div class="iconContainer">
                 <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="icon" :icon="['fab', 'facebook']" size="2x"/></g-link>
                 <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="icon" :icon="['fab', 'twitter']" size="2x"/></g-link>
                 <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="icon" :icon="['fab', 'instagram']" size="2x"/></g-link>
             </div>
-            <div>
+            <div class="footnoteContainer">
             <p class="footnote">JAMstack by &copy; Chadd Poggenpoel 2019</p>
             </div>
         </nav>
@@ -41,43 +41,44 @@ export default {
         flex-direction: column;
         justify-content: flex-end;
         background: #000;
+        color: #f1f1f1;
     }
     
     nav {
-        position: relative;
         width: 100%;
         height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #000;
-        color: #f1f1f1;
-        z-index: 999;
     }
 
     nav div {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
-    nav div h1 {
+    nav .fas {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        z-index: 999;
+    }
+
+    nav div .brand {
         font-family: 'Rock Salt', cursive;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 100;
     }
 
-    nav ul {
-        margin: 0 0.5em 0;
-    }
-
-    nav li {
+    nav .listContainer {
+        padding: 0.5em 0;
         font-size: 1.3rem;
-        margin-bottom: 0.2em;
     }
 
-    nav .icon {
-        margin: 0.5em;
+    nav .iconContainer {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1em;
+        padding: 1em 0;
     }
 
     nav li a:hover,
@@ -86,9 +87,15 @@ export default {
         cursor: pointer;
     }
 
-    .footnote {
-        font-size: 0.6rem;
+    .footnoteContainer {
+        text-align: center;
+        font-size: 0.5rem;
         font-weight: 100;
-        margin-bottom: 3em;
+    }
+
+    @media screen and (max-width: 960px) {
+        .sidenavContainer {
+            visibility: hidden;
+        }
     }
 </style>
