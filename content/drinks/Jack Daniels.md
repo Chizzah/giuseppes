@@ -1,6 +1,7 @@
 ---
 title: 'Jack Daniels'
+categories: 'USA'
 type: 'Whiskey'
 description: 'Smooth blah blah blah'
-price: 19
+price: 39
 ---
