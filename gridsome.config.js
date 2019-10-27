@@ -19,13 +19,13 @@ module.exports = {
   
   templates: {
     Food: '/content/food/:title/:price',
-    Drinks: '/content/drinks/:title/:price',
+    Drinks: '/content/drinks/:title/:price'
   },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/**/*.md',
+        path: './content/food/*.md',
         typeName: 'Food',
         remark: {
           plugins: [
@@ -36,7 +36,7 @@ module.exports = {
     },    {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/**/*.md',
+        path: './content/drinks/*.md',
         typeName: 'Drinks',
         remark: {
           plugins: [
