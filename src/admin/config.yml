@@ -10,7 +10,7 @@ collections:
     label: "Food Item"
     folder: "./content/food"
     create: true
-    slug: "/{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Name of Food", name: "title", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
@@ -18,7 +18,7 @@ collections:
     label: "Drink Item"
     folder: "./content/drinks"
     create: true
-    slug: "/{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Name of Drink", name: "title", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}

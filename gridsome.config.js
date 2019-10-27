@@ -18,15 +18,14 @@ module.exports = {
   },
   
   templates: {
-    Food: '/content/food/:title/:categories/:type/:description/:price',
-    Drinks: '/content/drinks/:title/:type/:description/:price',
-    Dessert: '/content/dessert/:title/:type/:description/:price',
+    Food: '/content/food/:title/:price',
+    Drinks: '/content/drinks/:title/:price',
   },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/food/*.md',
+        path: './content/**/*.md',
         typeName: 'Food',
         remark: {
           plugins: [
@@ -37,19 +36,8 @@ module.exports = {
     },    {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/drinks/*.md',
+        path: './content/**/*.md',
         typeName: 'Drinks',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
-      },
-    },    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './content/dessert/*.md',
-        typeName: 'Dessert',
         remark: {
           plugins: [
             //...local plugins

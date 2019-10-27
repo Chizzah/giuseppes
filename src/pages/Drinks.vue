@@ -1,11 +1,10 @@
 <template>
   <Layout>
-    <div class="container" v-for="edge in $page.allDrinks.edges" :key="edge.node.id">
+    <div class="container">
     <h1>Drinks</h1>
-    <h3><em>{{ edge.node.type }}</em><span>.</span></h3>
       <ul>
-        <li>
-          <span><strong>{{ edge.node.title }}:</strong> {{ edge.node.description }}</span> <span class="price">{{ edge.node.price }}</span>
+        <li v-for="edge in $page.allDrinks.edges" :key="edge.node.id">
+          <strong>{{ edge.node.title }}</strong><span class="price">{{ edge.node.price }}</span>
         </li>
       </ul>
     </div>
@@ -19,8 +18,6 @@ query {
       node {
         id
         title
-        type
-        description
         price
       }
     }
