@@ -17,14 +17,14 @@ collections:
       - {label: "Pasta Type", name: "type", widget: "string"}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}
-  - name: "Pasta"
-    label: "Pasta Item"
-    folder: "content/food/pasta"
+  - name: "Pizza"
+    label: "Pizza Item"
+    folder: "content/food/pizza"
     create: true
     delete: true
     slug: "{{slug}}"
     fields:
-      - {label: "Name of Food", name: "title", widget: "string"}
+      - {label: "Name of Pizza", name: "title", widget: "string"}
       - {label: "Pizza Type", name: "type", widget: "string"}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}
