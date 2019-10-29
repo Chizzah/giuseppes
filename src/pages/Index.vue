@@ -16,15 +16,15 @@ export default {
 
 <style>
   video {
-    object-fit: fill;
     width: 70vw;
     height: 100vh;
     margin-left: -8em;
-    margin-top: -2.5em;
+    margin-top: -2.78em;
   }
     @media screen and (max-width: 960px) {
     video {
       width: 100vw;
+      height: 100vh;
     }
   }
 </style>

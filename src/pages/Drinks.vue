@@ -1,23 +1,47 @@
 <template>
   <Layout>
     <div class="container">
-    <h1>Drinks</h1>
-      <ul>
-        <li v-for="edge in $page.allDrinks.edges" :key="edge.node.id">
-          <strong>{{ edge.node.title }}</strong><span class="price">{{ edge.node.price }}</span>
-        </li>
-      </ul>
+      <h1>Drinks</h1>
+      <h3>Beer<span>.</span></h3>
+        <ul class="menuList" v-for="{ node } in $page.beer.edges" :key="node.id">
+          <li>
+            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <span class="price">{{ node.price }}</span>
+            <p> {{ node.description }}</p>
+          </li>
+        </ul>
+      <h3>Whiskey<span>.</span></h3>
+        <ul class="menuList" v-for="{ node } in $page.whiskey.edges" :key="node.id">
+          <li>
+            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <span class="price">{{ node.price }}</span>
+            <p> {{ node.description }}</p>
+          </li>
+        </ul>
     </div>
   </Layout>
 </template>
 
 <page-query>
 query {
-  allDrinks {
+  beer: allBeer {
     edges {
       node {
         id
         title
+        type
+        description
+        price
+      }
+    }
+  }
+  whiskey: allWhiskey {
+    edges {
+      node {
+        id
+        title
+        type
+        description
         price
       }
     }
@@ -27,29 +51,9 @@ query {
 
 <script>
 export default {
-  metaInfo: {
-    title: "Mango's Restaurant & Bar"
-  }
+
 }
 </script>
 
 <style>
-  div h3 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    padding: 1em 0;
-  }
-
-  div h3 span {
-    color: orangered;
-  }
-
-  ul li {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .price {
-    margin-right: 10em;
-  }
 </style>

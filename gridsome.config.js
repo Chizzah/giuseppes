@@ -18,26 +18,53 @@ module.exports = {
   },
   
   templates: {
-    Food: '/content/food/:title/:price',
-    Drinks: '/content/drinks/:title/:price'
+    Pasta: '/content/food/pasta/:title/:type/:description/:price',
+    Pizza: '/content/food/pizza/:title/:type/:description/:price',
+    Beer: '/content/drinks/beer/:title/:type/:description/:price',
+    Whiskey: '/content/drinks/whiskey/:title/:type/:description/:price'
   },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/food/*.md',
-        typeName: 'Food',
+        path: './content/food/pasta/*.md',
+        typeName: 'Pasta',
         remark: {
           plugins: [
             //...local plugins
           ]
         }
       },
-    },    {
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/drinks/*.md',
-        typeName: 'Drinks',
+        path: './content/food/pizza/*.md',
+        typeName: 'Pizza',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './content/drinks/beer/*.md',
+        typeName: 'Beer',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './content/drinks/whiskey/*.md',
+        typeName: 'Whiskey',
         remark: {
           plugins: [
             //...local plugins

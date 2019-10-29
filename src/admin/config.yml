@@ -6,21 +6,47 @@ media_folder: "static/uploads"
 public_folder: "uploads"
 
 collections:
-  - name: "Food"
-    label: "Food Item"
-    folder: "content/food"
+  - name: "Pasta"
+    label: "Pasta Item"
+    folder: "content/food/pasta"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name of Pasta", name: "title", widget: "string"}
+      - {label: "Pasta Type", name: "type", widget: "string"}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "Pasta"
+    label: "Pasta Item"
+    folder: "content/food/pasta"
     create: true
     delete: true
     slug: "{{slug}}"
     fields:
       - {label: "Name of Food", name: "title", widget: "string"}
+      - {label: "Pizza Type", name: "type", widget: "string"}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}
-  - name: "Drinks"
-    label: "Drink Item"
-    folder: "content/drinks"
+  - name: "Beer"
+    label: "Beer Item"
+    folder: "content/drinks/beer"
     create: true
     delete: true
     slug: "{{slug}}"
     fields:
-      - {label: "Name of Drink", name: "title", widget: "string"}
+      - {label: "Name of Beer", name: "title", widget: "string"}
+      - {label: "Beer Maker", name: "type", widget: "string"}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "Whiskey"
+    label: "Whiskey Item"
+    folder: "content/drinks/whiskey"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name of Whiskey", name: "title", widget: "string"}
+      - {label: "Whiskey Type", name: "type", widget: "string"}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}

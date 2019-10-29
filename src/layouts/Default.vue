@@ -24,19 +24,18 @@ export default {
   padding: 0;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+body,
+h3 {
   background: white;
   font-family: 'Noto Sans', Arial, Helvetica, sans-serif, cursive;
   line-height: 1.3;
 }
 
 .container {
-   width: 70vw;
-   height: 100vh;
-   float: right;
-   padding: 2.5em 0 0 8em; 
+  width: 70vw;
+  height: auto;
+  float: right;
+  padding: 2.5em 0 0 8em; 
 }
 
 h1,
