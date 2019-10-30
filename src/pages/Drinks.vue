@@ -5,7 +5,7 @@
       <h3>Beer<span>.</span></h3>
         <ul class="menuList" v-for="{ node } in $page.beer.edges" :key="node.id">
           <li>
-            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <h4>{{ node.title }}:</h4>
             <span class="price">{{ node.price }}</span>
             <p> {{ node.description }}</p>
           </li>
@@ -13,7 +13,7 @@
       <h3>Whiskey<span>.</span></h3>
         <ul class="menuList" v-for="{ node } in $page.whiskey.edges" :key="node.id">
           <li>
-            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <h4>{{ node.title }}:</h4>
             <span class="price">{{ node.price }}</span>
             <p> {{ node.description }}</p>
           </li>
@@ -29,7 +29,6 @@ query {
       node {
         id
         title
-        type
         description
         price
       }
@@ -40,7 +39,6 @@ query {
       node {
         id
         title
-        type
         description
         price
       }

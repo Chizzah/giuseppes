@@ -5,7 +5,7 @@
       <h3>Pasta<span>.</span></h3>
         <ul class="menuList" v-for="{ node } in $page.pasta.edges" :key="node.id">
           <li>
-            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <h4>{{ node.title }}:</h4>
             <span class="price">{{ node.price }}</span>
             <p> {{ node.description }}</p>
           </li>
@@ -13,7 +13,7 @@
       <h3>Pizza<span>.</span></h3>
         <ul class="menuList" v-for="{ node } in $page.pizza.edges" :key="node.id">
           <li>
-            <span><h4>{{ node.title }}:</h4><em>( {{ node.type }} )</em></span>
+            <h4>{{ node.title }}:</h4>
             <span class="price">{{ node.price }}</span>
             <p> {{ node.description }}</p>
           </li>
@@ -29,7 +29,6 @@ query {
       node {
         id
         title
-        type
         description
         price
       }
@@ -40,7 +39,6 @@ query {
       node {
         id
         title
-        type
         description
         price
       }
@@ -70,10 +68,8 @@ export default {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-  }
-
-  .price {
-    margin-right: 10em;
+    padding-bottom: 0.5em;
+    line-height: 1.7;
   }
   
   div h3 {
