@@ -75,6 +75,7 @@ export default {
   .price {
     margin-right: 10em;
   }
+  
   div h3 {
     font-family: 'Noto sans', cursive;
     font-size: 1.7rem;

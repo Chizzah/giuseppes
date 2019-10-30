@@ -18,10 +18,10 @@ module.exports = {
   },
   
   templates: {
-    Pasta: '/content/food/pasta/:title/:type/:description/:price',
-    Pizza: '/content/food/pizza/:title/:type/:description/:price',
-    Beer: '/content/drinks/beer/:title/:type/:description/:price',
-    Whiskey: '/content/drinks/whiskey/:title/:type/:description/:price'
+    Pasta: '/content/food/pasta/:title/:description/:price',
+    Pizza: '/content/food/pizza/:title/:description/:price',
+    Beer: '/content/drinks/beer/:title/:description/:price',
+    Whiskey: '/content/drinks/whiskey/:title/:description/:price'
   },
   plugins: [
     {
@@ -41,11 +41,6 @@ module.exports = {
       options: {
         path: './content/food/pizza/*.md',
         typeName: 'Pizza',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
       },
     },
     {
@@ -53,11 +48,6 @@ module.exports = {
       options: {
         path: './content/drinks/beer/*.md',
         typeName: 'Beer',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
       },
     },
     {
@@ -65,11 +55,6 @@ module.exports = {
       options: {
         path: './content/drinks/whiskey/*.md',
         typeName: 'Whiskey',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
       },
     },
     {
