@@ -22,7 +22,7 @@
                 <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="px-1 hover:text-green-400" :icon="['fab', 'instagram']" size="2x"/></g-link>
             </div>
             <p class="px-2 text-xs font-hairline hidden sm:block">
-                JAMstack Website by Cloud Digital
+                JAMstack Website by Cloudy Developers
             </p>
         </nav>
     </header>
