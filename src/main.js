@@ -7,15 +7,16 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
+// FontAwesomeIcon
 config.autoAddCss = false;
 library.add(faFacebook, faTwitter, faInstagram)
+
+//Typography
+require('typeface-rock-salt')
+require('typeface-noto-sans')
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome', FontAwesomeIcon)
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Rock+Salt&display=swap, https://fonts.googleapis.com/css?family=Noto+Sans&display=swap'
-  })
 }

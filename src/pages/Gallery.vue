@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>Gallery</h1>
-    </div>
+    <section class="px-6 text-gray-200 sm:ml-96 sm:px-20">
+      <h2 class="pt-8 pb-3 text-2xl">Gallery</h2>
+    </section>
   </Layout>
 </template>
 

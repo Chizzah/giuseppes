@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>Contact Us</h1>
-      <ContactForm />
-    </div>
+    <section class="px-6 text-gray-200 sm:ml-96 sm:px-20">
+        <h2 class="pt-8 pb-3 text-2xl">Contact Us</h2>
+        <ContactForm />
+    </section>
   </Layout>
 </template>
 
@@ -11,9 +11,6 @@
 import ContactForm from '~/components/ContactForm';
 
 export default {
-  metaInfo: {
-    title: "Mango's Restaurant & Bar"
-  },
   components: {
     ContactForm
   }

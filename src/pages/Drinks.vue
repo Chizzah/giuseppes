@@ -1,24 +1,22 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>Drinks</h1>
-      <h3>Beer<span>.</span></h3>
-        <ul class="menuList" v-for="{ node } in $page.beer.edges" :key="node.id">
+    <section class="px-6 text-gray-200 sm:ml-96 sm:px-20">
+      <h2 class="pt-8 pb-3 text-2xl">Drinks</h2>
+      <h3 class="py-4 text-2xl">Beer<span class="text-green-400">.</span></h3>
+        <ul class="py-2" v-for="{ node } in $page.beer.edges" :key="node.id">
           <li>
-            <h4>{{ node.title }}:</h4>
-            <span class="price">{{ node.price }}</span>
+            <h4 class="font-semibold">{{ node.title }}:<span class="float-right">{{ node.price }}</span></h4>
             <p> {{ node.description }}</p>
           </li>
         </ul>
-      <h3>Whiskey<span>.</span></h3>
-        <ul class="menuList" v-for="{ node } in $page.whiskey.edges" :key="node.id">
+      <h3 class="py-4 text-2xl">Whiskey<span class="text-green-400">.</span></h3>
+        <ul class="py-2" v-for="{ node } in $page.whiskey.edges" :key="node.id">
           <li>
-            <h4>{{ node.title }}:</h4>
-            <span class="price">{{ node.price }}</span>
+            <h4 class="font-semibold">{{ node.title }}:<span class="float-right">{{ node.price }}</span></h4>
             <p> {{ node.description }}</p>
           </li>
         </ul>
-    </div>
+    </section>
   </Layout>
 </template>
 

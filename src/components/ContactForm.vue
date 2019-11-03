@@ -8,22 +8,22 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         >
-            <h3>make a reservation or book our venue</h3>
+            <h3 class="mt-4 py-4 px-2 bg-green-800 uppercase">Place your order & come pick it up when notified</h3>
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
             <label>
                 Don’t fill this out: <input name="bot-field" />
             </label>
             </p>
-            <div class="sender-info">
-                <input for="name" type="text" name="name" v-model="formData.name" placeholder="Full Name" />
-                <input for="email" type="email" name="email" v-model="formData.email" placeholder="Email" />
-                <input for="email" type="number" name="number" v-model="formData.number" placeholder="Number" />
+            <div class="flex flex-col">
+                <input class="w-full py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="name" type="text" name="name" v-model="formData.name" placeholder="Full Name" />
+                <input class="py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="email" type="email" name="email" v-model="formData.email" placeholder="Email" />
+                <input class="py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="email" type="number" name="number" v-model="formData.number" placeholder="Number" />
             </div>
             <div class="message-wrapper">
-                <textarea for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
+                <textarea class="w-full py-4 overflow-hidden bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
             </div>
-            <button type="submit">SEND MESSAGE</button>
+            <button class="mt-4 px-6 py-4 bg-green-800" type="submit">SEND MESSAGE</button>
         </form>
     </div>
 </template>
@@ -64,10 +64,11 @@ export default {
 </script>
 
 <style scoped>
+/*
 .form-style{
 	font-family: 'Open Sans Condensed', arial, sans;
-	width: 52em;
-	padding: 30px;
+	width: 30em;
+    padding: 30px;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -99,7 +100,7 @@ form select
 	padding: 7px;
 	border: none;
 	border-bottom: 1px solid #ddd;
-	background: transparent;
+	background: red-700;
 	margin-bottom: 10px;
 	font: 16px Arial, Helvetica, sans-serif;
 	height: 45px;
@@ -125,5 +126,5 @@ form button {
 }
 form button:hover {
 	background-color: #666;
-}
+} */
 </style>

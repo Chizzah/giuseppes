@@ -1,35 +1,22 @@
 <template>
   <Layout>
-    <div class="container">
-      <h2>About Mango's</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sint cumque voluptatem cupiditate odit, corporis ullam neque suscipit nesciunt consequatur delectus dolorum facere, eaque recusandae illo sapiente debitis temporibus perferendis, natus aliquam. Magnam, quo. Natus in nesciunt eum eos, quibusdam corporis rerum dolor maxime cupiditate itaque voluptatem temporibus dolores culpa fuga laboriosam exercitationem tempora pariatur numquam! Totam quisquam assumenda accusantium repellat rerum deserunt, ab voluptatibus repellendus est culpa ut, sed libero rem deleniti doloremque animi aut laborum maxime atque. Similique adipisci pariatur maiores, dicta eligendi minima magni dolore aperiam assumenda ducimus doloremque minus quo non. Architecto neque odio illum aperiam non, commodi excepturi accusamus minima quam dignissimos.</p>
-      <p>Sincerely,</p>
-      <h1>Mr Dawnay</h1>
-    </div>
+    <section class="px-6 text-gray-200 sm:ml-96 sm:px-20">
+      <h2 class="pt-8 pb-3 text-2xl">About Giusesppe's</h2>
+      <p class="py-2 sm:text-xl">Giuseppe’s Pizzeria & Cocktail bar is located in Gansbaai and we are proud to be considered as one of the best pizzerias in the Western Cape. Our friendly family atmosphere coupled with our delicious menu is a true attraction to locals and tourists alike. We are a family friendly pizzeria and you can find us on the corner of Dirkie Uys and Fabriek streets in Gansbaai.</p>
+      <p class="py-2 sm:text-xl">Giuseppe’s Pizzeria & Cocktail bar serves a variety of delicious menu items that are perfect for your Gansbaai holiday. We use a secret recipe for our delicious pizza bases and we are known for making the best cocktails in Gansbaai.</p>
+      <p class="py-2 sm:text-xl">Come and meet Gino and Ansie at Giuseppe’s and find out why our guests love us! Whether you need good food, great company, or a combination of both, we will make sure that you leave our restaurant feeling great. We are open Mondays to Saturdays from 7 AM for breakfast – we look forward to meet you!</p>
+      <p class="py-2 sm:text-xl">Sincerely,</p>
+      <h1 class="py-2 text-3xl">Mr Gino</h1>
+    </section>
+
   </Layout>
 </template>
 
 <script>
 export default {
-  metaInfo: {
-    title: "Mango's Restaurant & Bar"
-  }
+
 }
 </script>
 
-<style scoped>
-  div h1 {
-    font-family: 'Rock Salt', cursive;
-    padding-bottom: 2em; 
-  }
-
-  div h2 {
-    font-family: 'Rock Salt', cursive;
-    padding-bottom: 1.5em;
-  }
-
-  div p {
-    font-size: 1.5rem;
-    padding: 0 8em 1em 0;
-  }
+<style>
 </style>
