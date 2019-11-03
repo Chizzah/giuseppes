@@ -2,15 +2,18 @@
   <div>
     <SideNavigation />
     <slot />
+    <Footer />
   </div>
 </template>
 
 <script>
 import SideNavigation from '~/components/SideNavigation';
+import Footer from '~/components/Footer';
 
 export default {
   components: {
-    SideNavigation
+    SideNavigation,
+    Footer
   }
 }
 </script>

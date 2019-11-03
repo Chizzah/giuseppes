@@ -11,19 +11,24 @@
             </div>
         </nav>
         <nav :class="isOpen ? 'block' : 'hidden'" class="block px-2 pb-2 font-semibold sm:block sm:text-lg">
-            <ul class="list-reset px-2 rounded hover:bg-green-700" v-for="menuItem in menuItems" :key="menuItem.title">
-                <li>
-                    <g-link :to="`${menuItem.route}`">{{ menuItem.title }}</g-link>
-                </li>
-            </ul>
-            <div class="p-1">
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="px-1 hover:text-green-400" :icon="['fab', 'facebook']" size="2x"/></g-link>
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="px-1 hover:text-green-400" :icon="['fab', 'twitter']" size="2x"/></g-link>
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="px-1 hover:text-green-400" :icon="['fab', 'instagram']" size="2x"/></g-link>
+            <div class="pb-2">
+                <ul class="list-reset px-2 rounded hover:bg-green-700" v-for="menuItem in menuItems" :key="menuItem.title">
+                    <li>
+                        <g-link :to="`${menuItem.route}`">{{ menuItem.title }}</g-link>
+                    </li>
+                </ul>
             </div>
-            <p class="px-2 text-xs font-hairline hidden sm:block">
-                JAMstack Website by Cloudy Developers
+            <div class="w-32 flex justify-around hidden sm:flex">
+                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'facebook']" size="2x"/></g-link>
+                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'twitter']" size="2x"/></g-link>
+                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'instagram']" size="2x"/></g-link>
+            </div>
+            <div class="px-2 pb-2 text-xs font-hairline hidden sm:block">
+            <p class="py-2">
+                JAMstack Website by digiCloud
             </p>
+            <p>Copyright &copy; {{ new Date().getFullYear() }} Giuseppes La Trattoria. All rights reserved.</p>
+            </div>
         </nav>
     </header>
 </template>
@@ -45,7 +50,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
