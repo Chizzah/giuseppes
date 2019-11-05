@@ -1,12 +1,12 @@
 <template>
-    <div class="form-style">
+    <section>
         <form 
         name="contact"
         method="post"
         v-on:submit.prevent="handleSubmit"
         action="/success/"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        data-netlify-honeypot="bot-field""
         >
             <h3 class="mt-4 py-4 px-2 bg-green-800 uppercase">Place your order & come collect when notified</h3>
             <input type="hidden" name="form-name" value="contact" />
@@ -25,7 +25,7 @@
             </div>
             <button class="mt-4 px-6 py-4 bg-green-800" type="submit">SEND MESSAGE</button>
         </form>
-    </div>
+    </section>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <section class="px-6 pb-64 text-gray-200 sm:ml-96 sm:px-20">
-        <h2 class="pt-8 pb-3 text-2xl">Contact Us</h2>
+    <section class="h-screen px-6 text-gray-200 sm:ml-96 sm:px-32">
+        <h2 class="py-8 text-2xl">Contact Us</h2>
         <ContactForm />
     </section>
   </Layout>
