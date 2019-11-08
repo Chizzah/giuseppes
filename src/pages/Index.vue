@@ -1,7 +1,13 @@
 <template>
   <Layout>
-    <section class="text-gray-200 sm:h-screen sm:ml-96 sm:pb-0">
-      <video class="w-full h-full object-fill" src="../../static/heroVideo.mp4" muted autoplay loop></video>
+    <section class="text-gray-200 sm:ml-96 sm:pb-0">
+      <div class="relative bg-black sm:h-screen">
+        <video class="w-full h-full object-fill bg-black opacity-25" src="../../static/heroVideo.mp4" muted autoplay loop></video>
+        <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center z-50 text-lg sm:text-3xl">
+        <h1 class="pb-4 sm:pb-8 sm:text-4xl">Come have a chat and a bite to eat!</h1>
+        <g-link to="/menu"><button class="py-2 px-8 rounded bg-green-800 text-center font-bold uppercase focus:outline-none hover:text-green-800 hover:bg-gray-200">Explore</button></g-link>
+      </div>
+      </div>
       <div class="w-full px-8 pb-4 sm:h-screen sm:px-32">
         <h1 class="py-8 text-lg sm:text-3xl">Welcome to Giuseppes LA Trattoria</h1>
         <p class="pb-4 sm:text-2xl">A trattoria is an Italian-style eating establishment, less formal than a ristorante, but more formal than an osteria. There are generally no printed menus, the service is casual, wine is sold by the decanter rather than the bottle, prices are low, and the emphasis is on a steady clientele rather than on haute cuisine. The food is modest but plentiful (mostly following regional and local recipes) and in some instances is even served family-style (i.e. at common tables).</p>
@@ -19,10 +25,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Mango's Restaurant & Bar"
+    title: "Giuseppes La Trattoria"
   }
 }
 </script>
-
-<style>
-</style>
