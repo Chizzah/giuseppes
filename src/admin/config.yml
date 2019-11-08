@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Breakfast"
         name: "Breakfast Item"
-        file: "content/menu/breakfast.md"
+        file: "content/menu/breakfast/*.md"
         fields:
           - name: list
             label: List
