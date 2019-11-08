@@ -40,8 +40,7 @@ export default {
             menuItems: [
                 { title:'Home', route:'/' },
                 { title:'About', route:'/about' },
-                { title:'Food', route:'/food' },
-                { title:'Drinks', route:'/drinks' },
+                { title:'Menu', route:'/menu' },
                 { title:'Gallery', route:'/gallery' },
                 { title:'Contact', route:'/contact' }
             ],

@@ -6,7 +6,7 @@
       <p class="py-2 sm:text-2xl">Giuseppe’s Pizzeria & Cocktail bar serves a variety of delicious menu items that are perfect for your Gansbaai holiday. We use a secret recipe for our delicious pizza bases and we are known for making the best cocktails in Gansbaai.</p>
       <p class="py-2 sm:text-2xl">Come and meet Gino and Ansie at Giuseppe’s and find out why our guests love us! Whether you need good food, great company, or a combination of both, we will make sure that you leave our restaurant feeling great. We are open Mondays to Saturdays from 7 AM for breakfast – we look forward to meet you!</p>
       <p class="py-2 sm:text-xl">Sincerely,</p>
-      <h1 class="py-2 text-3xl sm:text-4xl">Mr Gino</h1>
+      <h2 class="py-2 text-2xl sm:text-3xl">Gino & Ansie</h2>
     </section>
 
   </Layout>
@@ -17,6 +17,3 @@ export default {
 
 }
 </script>
-
-<style>
-</style>

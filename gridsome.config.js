@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Mango's Restaurant & Bar",
+  siteName: "Giuseppes La Trattoria",
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -16,46 +16,18 @@ module.exports = {
       ]
     }
   },
-  
-  templates: {
-    Pasta: '/content/food/pasta/:title/:description/:price',
-    Pizza: '/content/food/pizza/:title/:description/:price',
-    Beer: '/content/drinks/beer/:title/:description/:price',
-    Whiskey: '/content/drinks/whiskey/:title/:description/:price'
-  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/food/pasta/*.md',
-        typeName: 'Pasta',
+        path: './content/menu/**/*.md',
+        typeName: 'Menu',
         remark: {
           plugins: [
             //...local plugins
           ]
         }
-      },
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './content/food/pizza/*.md',
-        typeName: 'Pizza',
-      },
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './content/drinks/beer/*.md',
-        typeName: 'Beer',
-      },
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './content/drinks/whiskey/*.md',
-        typeName: 'Whiskey',
-      },
+      }
     },
     {
       use: `gridsome-plugin-netlify-cms`,
