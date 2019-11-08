@@ -1,21 +1,39 @@
 backend:
   name: github
   repo: Chizzah/mangosrestaurant
+
 media_folder: "static/uploads"
 public_folder: "uploads"
+
 collections:
-  - label: "Menu"
-    name: "Menu Items"
-    files:
-      - label: "Breakfast"
-        name: "Breakfast Item"
-        file: "content/menu/breakfast/*.md"
-        fields:
-          - name: list
-            label: List
-            widget: list
-            fields:
-              - {label: "Name of Breakfast", name: "title", widget: "string"}
-              - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Breakfast'}
-              - {label: "Ingredients/Description", name: "description", widget: "text"}
-              - {label: "Price", name: "price", widget: "string"}
+  - name: "Breakfast"
+    label: "Breakfast Item"
+    folder: "content/menu/breakfast"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name of Breakfast", name: "title", widget: "string"}
+      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Breakfast'}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "Starters"
+    label: "Starters Item"
+    folder: "content/menu/starters"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name of Starter", name: "title", widget: "string"}
+      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Starter'}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Price", name: "price", widget: "string"}
+  - name: "Pizza"
+    label: "Pizza Item"
+    folder: "content/menu/pizza"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name of Pizza", name: "title", widget: "string"}
+      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Breakfast'}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "PiccolaPrice", name: "piccola", widget: "string"}
+      - {label: "GrandePrice", name: "grande", widget: "string"}
