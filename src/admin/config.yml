@@ -8,15 +8,10 @@ public_folder: "uploads"
 collections:
   - label: "Menu"
     name: "Menu Items"
+    create: true
+    delete: true
+    slug: "{{slug}}"
     files:
-      - label: "Breakfast"
-        name: "Breakfast Item"
-        file: "content/menu/breakfast/*.md"
-        fields:
-          - {label: "Name of Breakfast", name: "title", widget: "string"}
-          - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Breakfast'}
-          - {label: "Ingredients/Description", name: "description", widget: "text"}
-          - {label: "Price", name: "price", widget: "string"}
       - label: "Starters"
         name: "Starter Item"
         file: "content/menu/starters/*.md"
