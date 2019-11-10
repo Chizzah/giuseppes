@@ -19,9 +19,9 @@
                 </ul>
             </div>
             <div class="w-32 flex justify-around hidden sm:flex">
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'facebook']" size="2x"/></g-link>
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'twitter']" size="2x"/></g-link>
-                <g-link to="https://www.facebook.com/Dawnayrsa/"><font-awesome class="hover:text-green-400" :icon="['fab', 'instagram']" size="2x"/></g-link>
+                <g-link to="https://www.facebook.com/giuseppes.gansbaai"><font-awesome class="hover:text-green-400" :icon="['fab', 'facebook']" size="2x"/></g-link>
+                <g-link to="https://www.facebook.com/giuseppes.gansbaai"><font-awesome class="hover:text-green-400" :icon="['fab', 'twitter']" size="2x"/></g-link>
+                <g-link to="https://www.facebook.com/giuseppes.gansbaai"><font-awesome class="hover:text-green-400" :icon="['fab', 'instagram']" size="2x"/></g-link>
             </div>
             <div class="px-2 pb-2 text-xs font-hairline hidden sm:block">
             <p class="py-2">
