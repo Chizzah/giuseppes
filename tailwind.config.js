@@ -20,7 +20,7 @@ module.exports = {
           'mobile': '18rem',
           '96': '24rem',
           '128': '32rem',
-          'desktop': '38rem',
+          'desktop': '36rem',
         }
       }
     }

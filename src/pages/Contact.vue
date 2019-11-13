@@ -11,6 +11,9 @@
 import ContactForm from '~/components/ContactForm';
 
 export default {
+  metaInfo: {
+    title: "Contact"
+  },
   components: {
     ContactForm
   }

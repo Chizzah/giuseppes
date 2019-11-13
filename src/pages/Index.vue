@@ -25,7 +25,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Giuseppes La Trattoria"
+    title: "Home"
   }
 }
 </script>

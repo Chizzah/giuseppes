@@ -8,12 +8,13 @@
       <p class="pb-4 sm:text-lg">Sincerely,</p>
       <h3 class="text-lg sm:text-xl">Gino & Ansie</h3>
     </section>
-
   </Layout>
 </template>
 
 <script>
 export default {
-
+  metaInfo: {
+    title: "About"
+  }
 }
 </script>
