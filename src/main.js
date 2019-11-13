@@ -5,7 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Vue from 'vue';
+import VueCarousel from 'vue-carousel';
 import DefaultLayout from '~/layouts/Default.vue'
+
+// Carousel
+Vue.use(VueCarousel);
 
 // FontAwesomeIcon
 config.autoAddCss = false;

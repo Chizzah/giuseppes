@@ -2,7 +2,7 @@
     <header class="bg-green-800 text-gray-200 sm:w-96 sm:h-screen sm:fixed sm:flex sm:flex-col sm:justify-end sm:pl-3">
         <nav class="flex justify-between items-center px-4 py-3">
             <div>
-                <g-link to="/"><h1 class="text-xl sm:text-4xl sm:pb-4">Giuseppe's La Trattoria</h1></g-link>
+                <g-link to="/"><h1 class="py-2 sm:text-xl sm:pb-4">Giuseppe's La Trattoria</h1></g-link>
             </div>
             <div class="sm:hidden">
                 <button @click="isOpen = !isOpen" type="button" class="block focus:outline-none">

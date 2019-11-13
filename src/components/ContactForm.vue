@@ -8,7 +8,7 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field""
         >
-            <h3 class="mt-4 py-4 px-2 bg-green-800 uppercase">Place your order & come collect when notified</h3>
+            <h5 class="p-4 bg-green-800 uppercase sm:text-lg">Place your order & collect</h5>
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
             <label>
@@ -23,7 +23,7 @@
             <div class="message-wrapper">
                 <textarea class="w-full py-4 overflow-hidden bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
             </div>
-            <button class="mt-4 px-6 py-4 bg-green-800" type="submit">SEND MESSAGE</button>
+            <button class="p-4 bg-green-800" type="submit">SEND MESSAGE</button>
         </form>
     </section>
 </template>

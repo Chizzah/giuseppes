@@ -17,8 +17,10 @@ module.exports = {
           cyan: '#9cdbff',
         },
         spacing: {
+          'mobile': '18rem',
           '96': '24rem',
           '128': '32rem',
+          'desktop': '38rem',
         }
       }
     }

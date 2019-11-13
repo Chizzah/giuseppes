@@ -1,10 +1,10 @@
 <template>
-    <layout>
-        <section class="px-6 text-gray-200 sm:ml-96 sm:px-20">
-            <h2 class="pt-8 pb-4 text-3xl">Menu</h2>
-            <Tabs />
-        </section>
-    </layout>
+  <layout>
+    <section class="px-6 pb-6 text-gray-200 sm:ml-96 sm:px-20">
+      <h2 class="py-8 text-lg sm:text-xl">Our Menu</h2>
+      <Tabs />
+    </section>
+  </layout>
 </template>
 
 <page-query>
@@ -50,8 +50,8 @@ query {
 import Tabs from '~/components/Tabs';
 
 export default {
-    components: {
-      Tabs
-    }
+  components: {
+    Tabs
+  }
 };
 </script>

@@ -24,7 +24,9 @@ export default {
     background: #C53030;
   }
   h1,
-  h2 {
+  h2,
+  h3,
+  h4 {
     font-family: 'Rock Salt', cursive;
     font-weight: 100;
   }
