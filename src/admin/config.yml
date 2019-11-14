@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Chizzah/mangosrestaurant
+  repo: Chizzah/giuseppes
 
 media_folder: "static/uploads"
 public_folder: "uploads"
