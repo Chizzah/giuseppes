@@ -8,7 +8,7 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field""
         >
-            <h5 class="p-4 bg-green-800 uppercase sm:text-lg">Place your order & collect</h5>
+            <h5 class="p-4 bg-green-800 uppercase sm:text-lg">Place your order & collect when notified</h5>
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
             <label>

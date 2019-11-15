@@ -28,7 +28,7 @@
 
     <div v-if="currentTab == 2">
       <h2 class="pt-8 pb-2 sm:text-lg">Pizza</h2>
-        <span class="pb-8 flex flex-row justify-between items-center"><p class="sm:text-lg"><em>(Try our epic pizzas!)</em></p><p class="text-xs font-semibold">(23cm) / (30cm)</p></span>
+        <span class="pb-8 flex flex-row justify-between items-center"><p class="sm:text-lg"><em>(Try our epic pizzas!)</em></p><p class="text-xs font-semibold sm:hidden">(23cm) / (30cm)</p><p class="text-xs font-semibold hidden sm:block sm:mr-8">Picolla (23cm) / Grande (30cm)</p></span>
         <div v-for="{ node } in $page.pizza.edges" :key="node.id">
           <span class="flex flex-row justify-between items-center"><h2 class="text-sm sm:text-md">{{ node.title }}</h2>
           <span class="flex flex-row justify-between items-center"><p class="pr-6 sm:pr-32">{{ node.picolla }}</p><p class="sm:pr-8">{{ node.grande }}</p></span></span>
@@ -42,11 +42,8 @@
 export default {
   data:() => {
     return {
-      currentTab: 0
+      currentTab: 2
     }
-  },
-  props: {
-    value: String
   },
   methods: {
     selectTab(selectedTab) {

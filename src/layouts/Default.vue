@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <main>
     <SideNavigation />
     <slot />
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script>
