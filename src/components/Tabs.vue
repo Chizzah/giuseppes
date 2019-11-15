@@ -8,7 +8,10 @@
 
     <div v-if="currentTab == 0">
       <h3 class="pt-8 pb-2 sm:text-lg">Breakfast</h3>
-      <p class="pb-8 sm:text-lg"><em>(Served between 7am-11am)</em></p>
+      <p class="pb-6 sm:text-lg"><em>(Served between 7am-11am)</em></p>
+      <div class="flex justify-center items-center">
+        <g-image class="pb-8 rounded" src="../../static/uploads/slide3.jpg" width="1200" height="300" quality="90" />
+      </div>
       <div v-for="{ node } in $page.breakfast.edges" :key="node.id">
         <span class="flex flex-row justify-between items-center"><h2 class="text-sm sm:text-md">{{ node.title }}</h2>
         <p>{{ node.price }}</p></span>
@@ -18,7 +21,10 @@
 
     <div v-if="currentTab == 1">
       <h2 class="pt-8 pb-2 sm:text-lg">Starters</h2>
-      <p class="pb-8 sm:text-lg"><em>(Start your meal off with our delicous starters)</em></p>
+      <p class="pb-6 sm:text-lg"><em>(Start your meal off with our delicous starters)</em></p>
+      <div class="flex justify-center items-center">
+        <g-image class="pb-8 rounded" src="../../static/uploads/slide5.jpg" width="1200" height="300" quality="90" />
+      </div>
       <div v-for="{ node } in $page.starters.edges" :key="node.id">
         <span class="flex flex-row justify-between items-center"><h2 class="text-sm sm:text-md">{{ node.title }}</h2>
         <p>{{ node.price }}</p></span>
@@ -27,8 +33,11 @@
     </div>
 
     <div v-if="currentTab == 2">
-      <h2 class="pt-8 pb-2 sm:text-lg">Pizza</h2>
-        <span class="pb-8 flex flex-row justify-between items-center"><p class="sm:text-lg"><em>(Try our epic pizzas!)</em></p><p class="text-xs font-semibold sm:hidden">(23cm) / (30cm)</p><p class="text-xs font-semibold hidden sm:block sm:mr-8">Picolla (23cm) / Grande (30cm)</p></span>
+      <h2 class="pt-8 pb-2 sm:text-lg">Pizza</h2><p class="pb-6 sm:text-lg"><em>(Try our epic brick oven baked pizzas!)</em></p>
+      <div class="flex justify-center items-center">
+        <g-image class="pb-8 rounded" src="../../static/uploads/slide1.jpg" width="1200" height="300" quality="90" />
+      </div>
+        <span class="pb-6 flex flex-row justify-between items-center"><p class="sm:text-lg"><em>Snack on the Picolla or feast on the Grande!</em></p><p class="text-xs font-semibold sm:hidden">(23cm) / (30cm)</p><p class="text-xs font-semibold hidden sm:block sm:mr-8">Picolla (23cm) / Grande (30cm)</p></span>
         <div v-for="{ node } in $page.pizza.edges" :key="node.id">
           <span class="flex flex-row justify-between items-center"><h2 class="text-sm sm:text-md">{{ node.title }}</h2>
           <span class="flex flex-row justify-between items-center"><p class="pr-6 sm:pr-32">{{ node.picolla }}</p><p class="sm:pr-8">{{ node.grande }}</p></span></span>

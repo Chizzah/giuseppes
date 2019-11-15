@@ -28,6 +28,5 @@ export default {
   h3,
   h4 {
     font-family: 'Rock Salt', cursive;
-    font-weight: 100;
   }
 </style>

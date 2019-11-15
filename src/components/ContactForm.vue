@@ -21,7 +21,7 @@
                 <input class="py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="email" type="number" name="number" v-model="formData.number" placeholder="Number" />
             </div>
             <div class="message-wrapper">
-                <textarea class="w-full py-4 overflow-hidden bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
+                <textarea class="w-full py-4 overflow-hidden bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="I would like to order..."></textarea>
             </div>
             <button class="p-4 bg-green-800" type="submit">SEND MESSAGE</button>
         </form>
