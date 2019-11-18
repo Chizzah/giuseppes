@@ -22,9 +22,9 @@
         <p class="pb-4 px-4 sm:px-12 sm:text-lg">A trattoria is an Italian-style eating establishment, less formal than a ristorante, but more formal than an osteria. There are generally no printed menus, the service is casual, wine is sold by the decanter rather than the bottle, prices are low, and the emphasis is on a steady clientele rather than on haute cuisine. The food is modest but plentiful (mostly following regional and local recipes) and in some instances is even served family-style (i.e. at common tables).</p>
         <p class="pb-4 px-4 sm:px-12 sm:text-lg">All our meals are freshly made to order. Our Pizza bases are freshly rolled to order. It may take a little longer to prepare. So why don’t sit relax and enjoy some of our wide range of drinks and Cocktails.</p>  
         <div class="mt-4 flex justify-between items-center sm:mt-16">
-          <g-link to="/food"><g-image class="px-2 sm:w-64" src="../../static/pizza.jpg" width="150" /></g-link>
-          <a href="https://xplorio.com/gansbaai/giuseppes-trattoria-and-cocktail-bar/" target="_blank"><g-image class="px-2 sm:w-64" src="../../static/Gansbaai.jpg" width="150" /></a>
-          <a href="https://www.tripadvisor.co.za/Restaurant_Review-g472522-d5427385-Reviews-Giuseppes_Gansbaai-Gansbaai_Overstrand_Overberg_District_Western_Cape.html" target="_blank"><g-image class="px-2 sm:w-64" src="../../static/tripadvisor-logo.png" width="150" /></a>
+          <g-link to="/food"><g-image class="px-2" src="../../static/pizza.jpg" width="250" fit="inside" /></g-link>
+          <a href="https://xplorio.com/gansbaai/giuseppes-trattoria-and-cocktail-bar/" target="_blank"><g-image class="px-2" src="../../static/Gansbaai.jpg" width="250" fit="inside" /></a>
+          <a href="https://www.tripadvisor.co.za/Restaurant_Review-g472522-d5427385-Reviews-Giuseppes_Gansbaai-Gansbaai_Overstrand_Overberg_District_Western_Cape.html" target="_blank"><g-image class="px-2" src="../../static/tripadvisor-logo.png" width="250" fit="inside"/></a>
         </div>
       </div>
     </section>
