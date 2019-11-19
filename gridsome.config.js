@@ -20,8 +20,32 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/menu/**/*.md',
-        typeName: 'Menu',
+        path: './content/menu/breakfast/*.md',
+        typeName: 'Breakfast',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './content/menu/starters/*.md',
+        typeName: 'Starters',
+        remark: {
+          plugins: [
+            //...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './content/menu/pizza/*.md',
+        typeName: 'Pizza',
         remark: {
           plugins: [
             //...local plugins
