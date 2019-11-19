@@ -51,8 +51,8 @@
 </template>
 
 <page-query>
-query {
-  breakfast: allBreakfast(filter: { category: { in: ["Breakfast"] }}) {
+query allMenu {
+  breakfast: allMenu(filter: { category: { in: ["Breakfast"] }}) {
     edges {
       node {
         id
@@ -63,7 +63,7 @@ query {
       }
     }
   }
-  starters: allStarters(filter: { category: { in: ["Starters"] }}) {
+  starters: allMenu(filter: { category: { in: ["Starters"] }}) {
     edges {
       node {
         id
@@ -74,7 +74,7 @@ query {
       }
     }
   }
-  pizza: allPizza(filter: { category: { in: ["Pizza"] }}) {
+  pizza: allMenu(filter: { category: { in: ["Pizza"] }}) {
     edges {
       node {
         id
