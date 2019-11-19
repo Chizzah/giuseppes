@@ -34,11 +34,6 @@ module.exports = {
       options: {
         path: './content/menu/starters/*.md',
         typeName: 'Starters',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
       }
     },
     {
@@ -46,11 +41,6 @@ module.exports = {
       options: {
         path: './content/menu/pizza/*.md',
         typeName: 'Pizza',
-        remark: {
-          plugins: [
-            //...local plugins
-          ]
-        }
       }
     },
     {
