@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900 text-gray-100 sm:w-96 sm:h-screen sm:fixed sm:flex sm:flex-col sm:justify-end sm:pl-3">
+  <header class="bg-black text-gray-100 sm:w-96 sm:h-screen sm:fixed sm:flex sm:flex-col sm:justify-end sm:pl-3">
     <nav class="flex justify-between items-center px-4 py-3">
       <div>
         <g-link to="/"><h1 class="py-2 text-xl sm:text-3xl sm:pb-4">Tasty Bites</h1></g-link>

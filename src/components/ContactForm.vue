@@ -8,7 +8,7 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field""
         >
-            <h5 class="p-4 bg-gray-900 text-gray-200 uppercase sm:text-lg">Make a reservation or book our venue</h5>
+            <h5 class="p-4 bg-black text-gray-200 uppercase sm:text-lg">Make a reservation or book our venue</h5>
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
             <label>
@@ -23,7 +23,7 @@
             <div class="message-wrapper">
                 <textarea class="w-full py-4 overflow-hidden border-solid border-b-2 bg-gray-200 border-gray-900 rounded-b-sm placeholder-gray-900 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
             </div>
-            <button class="p-4 bg-gray-900 text-gray-200" type="submit">SEND MESSAGE</button>
+            <button class="p-4 bg-black text-gray-200" type="submit">SEND MESSAGE</button>
         </form>
     </section>
 </template>
