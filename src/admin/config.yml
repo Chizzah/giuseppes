@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Chizzah/giuseppes
+  repo: Chizzah/tastybites
 
 media_folder: "static/uploads"
 public_folder: "uploads"
@@ -13,7 +13,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Name of Breakfast", name: "title", widget: "string"}
-      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Breakfast'}
+      - {label: "Type of Breakfast Item", name: "category", widget: "hidden", default: "Breakfast"}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}
   - name: "Starters"
@@ -23,7 +23,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Name of Starter", name: "title", widget: "string"}
-      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Starters'}
+      - {label: "Type of Starter Item", name: "category", widget: "hidden", default: "Starters"}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Price", name: "price", widget: "string"}
   - name: "Pizza"
@@ -33,7 +33,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Name of Pizza", name: "title", widget: "string"}
-      - {label: "Type of Menu Item", name: "category", widget: "hidden", default: 'Pizza'}
+      - {label: "Type of Pizza Item", name: "category", widget: "hidden", default: "Pizza"}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "PiccolaPrice", name: "piccola", widget: "string"}
       - {label: "GrandePrice", name: "grande", widget: "string"}

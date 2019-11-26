@@ -21,7 +21,7 @@ export default {
 <style lang="postcss">
   body {
     font-family: 'Noto Sans', sans-serif;
-    background: #C53030;
+    background: #EDF2F7;
   }
   h1,
   h2,

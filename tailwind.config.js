@@ -18,7 +18,6 @@ module.exports = {
         },
         spacing: {
           'mobile': '18rem',
-          'arrow': '22rem',
           '96': '24rem',
           '128': '32rem',
           'desktop': '36rem',

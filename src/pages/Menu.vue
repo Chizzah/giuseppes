@@ -1,11 +1,11 @@
 <template>
   <layout>
-    <section class="px-6 pb-6 text-gray-200 sm:ml-96 sm:px-20">
+    <section class="px-6 pb-6 text-gray-900 sm:ml-96 sm:px-20">
       <h2 class="py-8 text-lg sm:text-xl">Our Menu</h2>
-      <div class="py-4 flex justify-around items-center border-solid border-t-2 border-b-2 border-white">
-        <button @click="selectTab(0)" :class="{ 'bg-white text-red-700 font-semibold' : currentTab == 0 }" class="p-4 border-2 border-solid border-white uppercase sm:w-32 hover:bg-white hover:text-red-700 hover:font-semibold focus:outline-none" tabindex="0">Breakfast</button>
-        <button @click="selectTab(1)" :class="{ 'bg-white text-red-700 font-semibold' : currentTab == 1 }" class="p-4 border-2 border-solid border-white uppercase sm:w-32 hover:bg-white hover:text-red-700 hover:font-semibold focus:outline-none">Starters</button>
-        <button @click="selectTab(2)" :class="{ 'bg-white text-red-700 font-semibold' : currentTab == 2 }" class="p-4 border-2 border-solid border-white uppercase sm:w-32 hover:bg-white hover:text-red-700 hover:font-semibold focus:outline-none">Pizza</button>
+      <div class="py-4 flex justify-around items-center border-solid border-t-2 border-b-2 border-gray-900">
+        <button @click="selectTab(0)" :class="{ 'bg-gray-900 text-gray-200 font-semibold' : currentTab == 0 }" class="p-4 border-2 border-solid border-gray-900 uppercase sm:w-32 hover:bg-gray-900 hover:text-gray-200 hover:font-semibold focus:outline-none" tabindex="0">Breakfast</button>
+        <button @click="selectTab(1)" :class="{ 'bg-gray-900 text-gray-200 font-semibold' : currentTab == 1 }" class="p-4 border-2 border-solid border-gray-900 uppercase sm:w-32 hover:bg-gray-900 hover:text-gray-200 hover:font-semibold focus:outline-none">Starters</button>
+        <button @click="selectTab(2)" :class="{ 'bg-gray-900 text-gray-200 font-semibold' : currentTab == 2 }" class="p-4 border-2 border-solid border-gray-900 uppercase sm:w-32 hover:bg-gray-900 hover:text-gray-200 hover:font-semibold focus:outline-none">Pizza</button>
       </div>
 
       <div v-if="currentTab == 0">
@@ -52,7 +52,7 @@
 
 <page-query>
 query allMenu {
-  breakfast: allMenu(filter: { category: { in: "Breakfast" }}) {
+  breakfast: allMenu(filter: { category: { in: ["Breakfast"] }}) {
     edges {
       node {
         id
@@ -63,7 +63,7 @@ query allMenu {
       }
     }
   }
-  starters: allMenu(filter: { category: { in: "Starters" }}) {
+  starters: allMenu(filter: { category: { in: ["Starters"] }}) {
     edges {
       node {
         id
@@ -74,7 +74,7 @@ query allMenu {
       }
     }
   }
-  pizza: allMenu(filter: { category: { in: "Pizza" }}) {
+  pizza: allMenu(filter: { category: { in: ["Pizza"] }}) {
     edges {
       node {
         id

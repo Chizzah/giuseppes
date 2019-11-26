@@ -7,8 +7,8 @@
         <g-image class="pb-4 h-mobile w-full object-cover sm:h-desktop" :src="item.images" />
       </vue-glide-slide>
       <template slot="control">
-          <button class="ml-2 py-4 px-12 bg-green-800 uppercase sm:mb-4 sm:ml-16 sm:px-20 focus:outline-none" data-glide-dir="<">prev</button>
-          <button class="mr-2 py-4 px-12 float-right bg-green-800 uppercase sm:mb-4 sm:mr-16 sm:px-20 focus:outline-none" data-glide-dir=">">next</button>
+          <button class="ml-2 py-4 px-12 bg-gray-900 text-gray-200 uppercase sm:mb-4 sm:ml-16 sm:px-20 focus:outline-none" data-glide-dir="<">prev</button>
+          <button class="mr-2 py-4 px-12 float-right bg-gray-900 text-gray-200 uppercase sm:mb-4 sm:mr-16 sm:px-20 focus:outline-none" data-glide-dir=">">next</button>
       </template>
     </vue-glide>
   </section>

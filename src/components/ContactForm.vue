@@ -8,7 +8,7 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field""
         >
-            <h5 class="p-4 bg-green-800 uppercase sm:text-lg">Place your order & collect when notified</h5>
+            <h5 class="p-4 bg-gray-900 text-gray-200 uppercase sm:text-lg">Make a reservation or book our venue</h5>
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
             <label>
@@ -16,14 +16,14 @@
             </label>
             </p>
             <div class="flex flex-col">
-                <input class="w-full py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="name" type="text" name="name" v-model="formData.name" placeholder="Full Name" />
-                <input class="py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="email" type="email" name="email" v-model="formData.email" placeholder="Email" />
-                <input class="py-4 bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="email" type="number" name="number" v-model="formData.number" placeholder="Number" />
+                <input class="w-full py-4 border-solid border-b-2 bg-gray-200 border-gray-900 rounded-b-sm placeholder-gray-900 focus:outline-none" for="name" type="text" name="name" v-model="formData.name" placeholder="Full Name" />
+                <input class="py-4 border-solid border-b-2 bg-gray-200 border-gray-900 rounded-b-sm placeholder-gray-900 focus:outline-none" for="email" type="email" name="email" v-model="formData.email" placeholder="Email" />
+                <input class="py-4 border-solid border-b-2 bg-gray-200 border-gray-900 rounded-b-sm placeholder-gray-900 focus:outline-none" for="email" type="number" name="number" v-model="formData.number" placeholder="Number" />
             </div>
             <div class="message-wrapper">
-                <textarea class="w-full py-4 overflow-hidden bg-red-700 border-solid border-b-2 border-green-800 rounded-b-sm placeholder-gray-200 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="I would like to order..."></textarea>
+                <textarea class="w-full py-4 overflow-hidden border-solid border-b-2 bg-gray-200 border-gray-900 rounded-b-sm placeholder-gray-900 focus:outline-none" for="message" name="message" v-model="formData.message" @input="textareaResize" ref="textarea" placeholder="Message"></textarea>
             </div>
-            <button class="p-4 bg-green-800" type="submit">SEND MESSAGE</button>
+            <button class="p-4 bg-gray-900 text-gray-200" type="submit">SEND MESSAGE</button>
         </form>
     </section>
 </template>
@@ -62,3 +62,11 @@ export default {
         }
 }
 </script>
+
+<style lang="postcss" scoped>
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+</style>
