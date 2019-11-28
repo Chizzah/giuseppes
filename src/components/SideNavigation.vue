@@ -25,7 +25,7 @@
       </div>
       <div class="px-2 pb-2 text-xs font-hairline hidden sm:block">
         <p class="py-2">
-          JAMstack Website by <a class="font-semibold hover:text-green-400" href="https://chaddpoggenpoel.netlify.com/">Chadd Poggenpoel</a> 
+          JAMstack Website by <a class="font-semibold hover:text-green-400" href="https://chaddpoggenpoel.netlify.com/">Chaddweb</a> 
         </p>
         <p>Copyright &copy; {{ new Date().getFullYear() }} Tasty Bites. All rights reserved.</p>
       </div>

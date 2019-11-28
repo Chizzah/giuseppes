@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full pin-b bg-gray-900 text-gray-200 pin-b sm:hidden">
+  <footer class="w-full pin-b bg-black text-gray-200 sm:hidden">
     <div class="pt-8 text-xs fill-current">
       <div class="mx-4 py-6 border-solid border-t-2 flex justify-center items-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M13 20v-5h-2v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.59l-.3.3a1 1 0 1 1-1.4-1.42l9-9a1 1 0 0 1 1.4 0l9 9a1 1 0 0 1-1.4 1.42l-.3-.3V20a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2zm5 0v-9.59l-6-6-6 6V20h3v-5c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v5h3z"/></svg>
@@ -22,7 +22,7 @@
       <a href="#"><g-image src="../../static/icons/instagram.svg" width="20" /></a>
     </div>
     <div class="mx-4 py-4 text-xs text-center">
-      <p class="pb-2">JAMstack Website by <a class="font-semibold hover:text-green-400" href="https://chaddpoggenpoel.netlify.com/">Chadd Poggenpoel</a></p>
+      <p class="pb-2">JAMstack Website by <a class="font-semibold hover:text-green-400" href="https://chaddpoggenpoel.netlify.com/">Chaddweb</a></p>
       <p>Copyright &copy; {{ new Date().getFullYear() }} Tasty Bites. All rights reserved.</p>
     </div>
   </footer>

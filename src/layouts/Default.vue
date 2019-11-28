@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style lang="postcss">
+  html {
+    height: 100%;
+  }
   body {
     font-family: 'Noto Sans', sans-serif;
     background: #EDF2F7;
